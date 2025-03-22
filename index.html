@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimente-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav id="nav-bar">
+       
+        <div class="logo">
+            <img src="./assets/logo-pic.png" alt="movimente-se logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-1" onclick="location.href=('./#contato')">Inscreva-se</button>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo-pic.png" alt="movimente-se logo">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()" >Home</a></li>
+                <li><a href="#sobre" onclick="toggleMenu()" >Sobre Nós</a></li>
+                <li><a href="#planos" onclick="toggleMenu()" >Planos</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
