@@ -1,6 +1,30 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+class MobileNavBar {
+    constructor(mobileMenu, navList, navLinks){
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick(){
+        console.log(this);
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle("open");
+    }
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+    init(){
+        if(this.mobileMenu){
+            this.addClickEvent();
+        }
+        return this;
+    }
 }
+
+const mobileNavBar = new MobileNavBar(
+    ".mobile-menu",
+    ".nav-links",
+    ".nav-links li"
+);
+mobileNavBar.init();
