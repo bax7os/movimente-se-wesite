@@ -136,24 +136,7 @@
     top: -20vh;
 }
 /* Seção Planos */
-    #planos {
-        min-height: auto;
-        padding: 4rem 0;
-    }
-    
-    .planos-container {
-        flex-direction: column;
-        overflow-x: visible;
-        gap: 2rem;
-        padding: 1rem;
-    }
-    
-    .plano-card {
-        flex: 0 0 auto;
-        width: 90%;
-        height: auto;
-        padding: 1rem 0;
-    }
+
     
     .card-bottom {
         top: 1rem;
