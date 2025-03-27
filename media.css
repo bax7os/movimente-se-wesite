@@ -17,30 +17,27 @@
         right: 0;
         flex-direction: column;
         background: #1E1E1E;
-        width: fit-content;
+        width: 100%;
         max-height: 0;
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         gap:0.2rem;
+        z-index: 5;
         overflow: hidden;
-        transition: all 0.3 ease-in-out;
-    }
-    .nav-links a{
-        display: block;
-        padding: 10px;
-        text-align:center;
-        font-size: 1.2rem;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        transition: all 0.3 ease-in-out;
-    }
-    .nav-links li{
-        list-style: none;
-    }
-    
+        transition: max-height 0.3s ease-in-out;
+    }  
     .nav-links.open{
         max-height: 300px;
     }
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+    }
+
+  
     .logo{
         position: relative;
         left: -2rem
@@ -52,11 +49,164 @@
     .mobile-menu{
         display: flex;
         position: absolute;
+        overflow: visible; 
+        z-index: 10;
         right: 2rem;
     }
-    .nav-links.active {
-        max-height: 300px; 
-        overflow: visible; 
+     /* seção Home */
+     #home {
+        background-position: 60% center;
+    }
+    .section-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .text-container {
+        position: static;
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .p1-text {
+        margin-top: 1.5rem;
+    }
+    .p1-color {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    
+    .btn-2 {
+        position: static;
+        margin-top: 2rem;
+    }
+/* Seção Sobre */
+#sobre {
+    height: auto;
+    padding: 4rem 0;
+}
+.section-container-2{
+    margin-top: 2rem;
+}
+.pic-text {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.imagem-sobre img{
+    height: 50vh;
+}
+.texto-sobre, .imagem-sobre {
+    width: 80%;
+}
+
+.texto-sobre p {
+    font-size: 1rem;
+}
+
+.text-about h2 {
+    font-size: 2rem;
+}
+.forma-1,
+.forma-2,
+.forma-3,
+.forma-4,
+.forma-4-1,
+.forma-3-1 {
+    height: 10vh;
+}
+.forma-3 {
+    left: 0;
+    bottom: -10vh;
+}
+.forma-4 {
+    right: 0;
+    bottom: 2vh;
+}
+.forma-3-1 {
+    left: -0.4rem;
+    top: -16vh;
+}
+.forma-4-1 {
+    right: 0;
+    top: -20vh;
+}
+/* Seção Planos */
+    #planos {
+        min-height: auto;
+        padding: 4rem 0;
     }
     
+    .planos-container {
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .plano-card {
+        flex: 0 0 auto;
+        width: 90%;
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .card-bottom {
+        top: 1rem;
+        gap: 1rem;
+    }
+    
+    .btn-3 {
+        top: 2rem;
+        margin-bottom: 3rem;
+    }
+    /* Seção Contato */
+    #contato {
+        height: auto;
+        padding: 4rem 0;
+    }
+    
+    .contact-info-upper-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .contact-info-container {
+        margin: 0.5rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section__text {
+        padding-top: 1rem;
+    }
+    
+    .pic-text {
+        padding: 0 1rem;
+    }
+    
+    .plano-card {
+        width: 95%;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .logo img {
+        height: 45px;
+    }
 }
