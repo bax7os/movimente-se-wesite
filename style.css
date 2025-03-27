@@ -17,6 +17,12 @@ p{
 .title{
     font-weight: bold;
 }
+h1{
+    color: var(--neutrals-background-neturals-neutral-color-400, #E0E0E0);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 110%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +41,7 @@ nav,
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 20vh;
+    height: 18vh;
     background: #1E1E1E;
 }
 .nav-links{
@@ -63,11 +69,13 @@ a:hover{
     
 }
 .btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
     font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
 }
 .btn-1{
     border: rgb(179, 179, 179) 0.1rem solid;
@@ -88,7 +96,7 @@ a:hover{
     cursor: default;
 }
 .logo img{
-    height: 80px;
+    height: 90px;
 }
 
 
@@ -130,4 +138,194 @@ a:hover{
 }
 .mobile-menu span:first-child{
     transform: none;
+}
+
+/* seções */
+
+.section-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+/* seção home */
+
+#home{
+    background-image: url('./assets/background-pic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.text-container{
+    position: relative;
+    left: 27.5rem;
+    top:-7rem
+}
+
+.p1-text {
+    margin-top: 1.2rem; 
+    text-align: center; 
+    line-height: 1.2;
+}
+
+.p1-color{
+    color: var(--neutrals-background-neturals-neutral-color-500, #BDBDBD);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+.btn-2{
+    position: relative;
+    top: 8vh;
+    left: -4rem
+}
+
+/* seção sobre nos */
+
+#sobre {
+    background-color: rgb(17, 17, 17);
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow: hidden; 
+}
+
+/* Posicionamento das formas */
+.forma-1, .forma-2, .forma-3, .forma-4 {
+    position: absolute;
+}
+
+.forma-1 {
+    right: 0;
+    top: -34vh;
+    transform: rotate(-25deg);
+}
+
+.forma-2 {
+    left: 0;
+    top: -33vh;
+    transform: rotate(30deg);
+}
+
+.forma-3 {
+    left: 0;
+    bottom: -20vh;
+}
+
+.forma-4 {
+    right: 0;
+    bottom: -20vh;
+}
+
+/* Estilos do texto central */
+.section__text {
+    text-align: center;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.p2-color {
+    color: var(--neutrals-background-neturals-neutral-color-500, #BDBDBD);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #ffffff;
+}
+
+/* Container principal */
+.section-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px); /* Ajuste para o espaço do section__text */
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+/* Conteúdo central */
+.conteudo-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.pic-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+}
+
+.texto-sobre {
+    width: 50%;
+    max-width: 460px;
+}
+
+.imagem-sobre {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-sobre p {
+    color: white;
+    font-weight: 300;
+    line-height: 150%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text-about {
+    text-align: center;
+    width: 100%;
+    margin-top: 2.5rem;
+    
+}
+.text-about h2{
+    font-size: 40px;
+}
+.text-about .title-2{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 40px;
+}
+.text-about .title-2::before,
+.text-about .title-2::after {
+    content:'"';
+    color:#FDDB3A;
+    font-size: 2.5rem;
+    position:absolute;
+   
+    transform: translate(-50%);
+    font-family: serif;
+}
+
+.text-about .title-2::before {
+    left: 1.2rem;
+}
+.text-about .title-2::after {
+    right: 0;
 }
