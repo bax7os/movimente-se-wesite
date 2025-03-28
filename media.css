@@ -7,8 +7,10 @@
     a{
         font-size: 19px;
     }
-    body{
+    html, body {
+        width: 100%;
         overflow-x: hidden;
+        position: relative;
     }
     nav {
         height: 12vh;
@@ -122,6 +124,7 @@
     position: absolute;
     width: clamp(150px, 25vw, 250px);
     height: auto;
+    opacity: 0.8;
 
 }
 
@@ -162,13 +165,20 @@
     .plano-card:hover {
         transform: none;
     }
-    .planos-container {
-        overflow-x: hidden; /* Remove o scroll horizontal */
-        flex-wrap: wrap; /* Quebra os cards em várias linhas se necessário */
-        justify-content: center; /* Centraliza os cards */
-        padding: 20px; /* Ajuste no padding */
-    }
-    
+    .plano-card{
+        height: 400px;
+        flex: 0 0 300px;
+     }
+     .plano-card:hover {
+         transform: none;
+     }
+     .planos-container {
+         overflow-x: hidden;
+         flex-wrap: wrap; 
+         justify-content: center; 
+         padding: 20px;
+     }
+
     .card-bottom {
         top: 1rem;
         gap: 1rem;
