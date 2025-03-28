@@ -233,7 +233,7 @@ a:hover {
     position: absolute;
     width: clamp(150px, 25vw, 250px);
     height: auto;
-    z-index: -1;
+
 }
 
 
@@ -254,7 +254,7 @@ a:hover {
 .forma-3 {
     left: -2%;
     bottom: -30%;
-    z-index: 5;
+
 
 }
 

@@ -114,6 +114,44 @@
     font-size: 2rem;
 }
 
+/* formas */
+.forma-1,
+.forma-2,
+.forma-3,
+.forma-4{
+    position: absolute;
+    width: clamp(150px, 25vw, 250px);
+    height: auto;
+
+}
+
+
+.forma-1 {
+    right: -5%;
+    top: -45%;
+    transform: rotate(-25deg);
+
+}
+
+.forma-2 {
+    left: -5%;
+    top: -50%;
+    transform: rotate(30deg);
+
+}
+
+.forma-3 {
+    left: -2%;
+    bottom: -47%;
+
+
+}
+
+.forma-4 {
+    right: -5%;
+    bottom: -30%;
+    
+}
 
 /* Seção Planos */
 
