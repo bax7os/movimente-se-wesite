@@ -113,30 +113,8 @@
 .text-about h2 {
     font-size: 2rem;
 }
-.forma-1,
-.forma-2,
-.forma-3,
-.forma-4,
-.forma-4-1,
-.forma-3-1 {
-    height: 10vh;
-}
-.forma-3 {
-    left: 0;
-    bottom: -10vh;
-}
-.forma-4 {
-    right: 0;
-    bottom: 2vh;
-}
-.forma-3-1 {
-    left: -0.4rem;
-    top: -16vh;
-}
-.forma-4-1 {
-    right: 0;
-    top: -20vh;
-}
+
+
 /* Seção Planos */
 
     .plano-card{
